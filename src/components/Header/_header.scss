@@ -1,0 +1,53 @@
+@import '../../styles/config/_base.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 440px;
+  font-weight: $font_weight-semiBold;
+  text-align: center;
+
+  &_main {
+    font-size: $font_size-36;
+  }
+
+  &_secondary {
+    width: 100%;
+    font-size: $font_size-24;
+    color: $color_gray-dark;
+  }
+}
+
+
+
+.menu {
+  display: none;
+
+  @media only screen and (min-width: 768px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  &_hamburger {
+    display: block;
+
+    @media only screen and (min-width: 768px){
+      display: none !important;
+    }
+  }
+  
+  &_link {
+    font-size: $font_size-24;
+    font-weight: $font_weight-medium;
+  }
+}

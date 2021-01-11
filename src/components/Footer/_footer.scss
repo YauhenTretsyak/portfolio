@@ -1,0 +1,23 @@
+@import '../../styles/config/_base.scss';
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: $font_weight-semiBold;
+  font-style: italic;
+
+  @media only screen and (min-width: 576px) {
+    justify-content: space-between;
+  }
+
+  &_wrapper {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
