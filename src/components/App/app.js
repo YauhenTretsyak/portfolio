@@ -1,26 +1,17 @@
-import React from 'react';
-import About from '../About';
-import Header from '../Header';
-import Skills from '../Skills';
-import Footer from '../Footer';
-
-const Main = () => {
-  return(
-    <>
-      <Skills />
-      <About />
-    </>
-  )
-};
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../../style/GlobalStyle';
+import { theme } from '../../style/theme';
+import { Header, Main, Footer } from '../index';
 
 const App = () => {
-  return (
-    <>
+  return(
+    <ThemeProvider theme={ theme }>
+      <GlobalStyle />
       <Header />
       <Main />
       <Footer />
-    </>
+    </ThemeProvider>
   )
-};
+}
 
 export default App;

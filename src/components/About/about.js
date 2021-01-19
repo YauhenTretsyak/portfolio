@@ -1,45 +1,107 @@
-import React from 'react';
-import './_about.scss';
+import { aboutData } from '../../Data/aboutData';
 
-const aboutContent = 'Jestem zaangażowany w rozwój osobisty, zawsze jestem otwarty na nowe wyzwania. Łatwo się przystosowuję do pracy w nowym zespole. Lubię pracować w grupie.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.'
+import styled from 'styled-components';
+import { ContainerWrapper } from '../../style/StyledComponents/ContainerWrapper';
+
+const AboutSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const AboutWrapper = styled(ContainerWrapper)`
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+  border-radius: 8px;
+
+  @media only screen and (min-width: 1104px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  } 
+`
+
+const AboutHeader = styled.h3`
+  margin-top: 0;
+  margin-bottom: 15px;
+`
+
+const AboutContentWrapper = styled.div`
+  @media only screen and (min-width: 1104px) {
+    margin-right: 70px;
+  }
+`
+
+const AboutContent = styled.p``
+
+const Clip = styled.div`
+  position: relative;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: url(${props => props.background});
+  background-size: cover;
+  box-shadow: 0px 3px 10px 1px #00000059;
+
+  &:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    &:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @media only screen and (min-width: 1104px) {
+    margin-bottom: 0;
+  }
+`
+
+const ClipItem = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background: url(${props => props.background});
+  background-size: cover;
+  clip-path: polygon(${props => props.clipPath});
+`
+
+const clipItems = aboutData.clip_secondary.map(item => {
+  return(
+    <ClipItem
+      key={item.id}
+      background={item.bg}
+      clipPath={item.clip_path}
+      className='clip'
+    />
+  )
+})
 
 const About = () => {
   return(
-    <>
-      <section className='section_wrapper'>
-        <div className='container about'>
-          <div className='about_content-wrapper'>
-            <h3 className='about_header'>O mnie</h3>
-            <p className='about_content'>
-              { aboutContent }
-            </p>
-          </div>
-          <div>
-          <div className="about_clip">
-            <div className="clip clip_1">
-              {/* <div className="content">
-                <h3>Picture 1</h3>
-                <p>Lorem ipsum dolor sit</p>
-              </div> */}
-            </div>
-            <div className="clip clip_2">
-              {/* <div className="content">
-                <h3>Picture 2</h3>
-                <p>Lorem ipsum dolor sit</p>
-              </div> */}
-            </div>
-            <div className="clip clip_3">
-              {/* <div className="content">
-                <h3>Picture 3</h3>
-                <p>Lorem ipsum dolor sit</p>
-              </div> */}
-            </div>
-          </div>
-          </div>
+    <AboutSection>
+      <AboutWrapper>
+        <AboutContentWrapper>
+          <AboutHeader className='about_header'>
+            O mnie
+          </AboutHeader>
+          <AboutContent>
+            { aboutData.mainInfo }
+          </AboutContent>
+        </AboutContentWrapper>
+        <div>
+        <Clip background={aboutData.clip.bg}>
+          { clipItems }
+        </Clip>
         </div>
-      </section>
-    </>
+      </AboutWrapper>
+    </AboutSection>
   )
-};
+}
 
 export default About;

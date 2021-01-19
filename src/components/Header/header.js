@@ -1,24 +1,35 @@
-import React from 'react';
-import './_header.scss';
+import {
+  HeaderSection,
+  HeaderWrapper,
+  LogoWpapper,
+  LogoMain,
+  LogoSecondary,
+  Menu,
+  MenuLink
+} from './Header.styles.js';
 
 const Header = () => {
-  return(
-    <header className='section_wrapper'>
-      <div className='container header'>
-        <div className='logo'>
-          <p className='logo_main'>Eugeniusz Trecjak</p>
-          <p className='logo_secondary'>(Yauhen Tretsyak)</p>
-        </div>
-        <div className='menu'>
-          <a href='1' className='menu_link'>Portfolio</a>
-          <a href='2' className='menu_link'>Kontakt</a>
-        </div>
-        <div className="hamburger-box menu_hamburger">
+  return (
+    <HeaderSection>
+      <HeaderWrapper>
+        <LogoWpapper>
+          <LogoMain>
+            Eugeniusz Trecjak
+          </LogoMain>
+          <LogoSecondary>
+            (Yauhen Tretsyak)
+          </LogoSecondary>
+        </LogoWpapper>
+        <Menu>
+          <MenuLink href='1'>Portfolio</MenuLink>
+          <MenuLink href='2'>Kontakt</MenuLink>
+        </Menu>
+        {/* <div className="hamburger-box menu_hamburger">
           <div className="hamburger-inner"></div>
-        </div>
-      </div>
-    </header>
+        </div> */}
+      </HeaderWrapper>
+    </HeaderSection>
   )
-};
+}
 
 export default Header;

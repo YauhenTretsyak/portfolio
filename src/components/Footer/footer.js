@@ -1,17 +1,17 @@
-import React from 'react';
-import './_footer.scss';
-import Socials from '../blocks/Socials';
+import { Socials } from '../Blocks/index';
+import {
+  FooterSection,
+  FooterWrapper,
+} from './Footer.styles.js';
 
 const Footer = () => {
   return(
-    <>
-      <footer className='footer_wrapper'>
-        <div className='container footer'>
+    <FooterSection>
+        <FooterWrapper>
           <p>Never give up!</p>
           <Socials />
-        </div>
-      </footer>
-    </>
+        </FooterWrapper>
+      </FooterSection>
   )
 }
 
