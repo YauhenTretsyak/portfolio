@@ -1,25 +1,6 @@
 import { socialsData } from '../../../Data/socialsData';
+import { SocialsWrapper, SocialLink } from './Socials.styles.js';
 
-import styled from 'styled-components';
-
-const SocialsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-`
-
-const SocialLink = styled.a`
-  display: block;
-  width: 30px;
-  height: 30px;
-  color: ${({theme}) => theme.colors.color_grayDark};
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: ${({theme}) => theme.colors.color_blue};
-  }
-`
 const socialLinkItem = socialsData.socialIcon.map(item => {
   return(
     <SocialLink 

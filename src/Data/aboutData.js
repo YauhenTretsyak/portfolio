@@ -4,7 +4,16 @@ import clip_2_bg from '../Assets/clip/clip_2.jpeg';
 import clip_3_bg from '../Assets/clip/clip_3.jpeg';
 
 const aboutData = {
-  mainInfo: 'Jestem zaangażowany w rozwój osobisty, zawsze jestem otwarty na nowe wyzwania. Łatwo się przystosowuję do pracy w nowym zespole. Lubię pracować w grupie.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
+  content: [
+    {
+      id: 'uy56weHG',
+      text: 'Jestem zaangażowany w rozwój osobisty, zawsze jestem otwarty na nowe wyzwania. Łatwo się przystosowuję do pracy w nowym zespole. Lubię pracować w grupie.'
+    },
+    {
+      id: '98TYghftRE',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.'
+    }
+  ],
   clip: {
     bg: clip_bg,
   },

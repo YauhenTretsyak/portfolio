@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const ContainerWrapper = styled.div`
-  margin: 30px auto;
+  margin: auto 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   position: relative;
   width: 100%;
   min-height: .1rem;

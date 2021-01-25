@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { ContainerWrapper } from '../../style/StyledComponents/ContainerWrapper';
 
 const HeaderSection = styled.header`
@@ -42,7 +43,7 @@ const Menu = styled.div`
   }
 `
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   font-size: 24px;
   font-weight: ${({theme}) => theme.fontWeight.font_weightMedium};
 `
