@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../../style/GlobalStyle';
 import { theme } from '../../style/theme';
-import { Main, Portfolio, Footer } from '../index';
+import { Main, PortfolioPage, Footer } from '../index';
 import {
   HashRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ const App = () => {
         <GlobalStyle />
         <Switch>
           <Route path='/portfolio'>
-            <Portfolio />
+            <PortfolioPage />
           </Route>
           <Route path='/'>
             <Main />

@@ -46,6 +46,15 @@ const Menu = styled.div`
 const MenuLink = styled(Link)`
   font-size: 24px;
   font-weight: ${({theme}) => theme.fontWeight.font_weightMedium};
+  color: ${({theme}) => theme.colors.color_black};
+  text-shadow: 6px 7px 11px #00000059;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: ${({theme}) => theme.colors.color_blue};
+    text-shadow: 10px 13px 2px #00000059;
+  }
 `
 
 export {

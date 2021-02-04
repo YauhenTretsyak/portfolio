@@ -4,6 +4,7 @@ import About from './About/About';
 import Skills from './Skills/Skills';
 import Main from './Main/Main';
 import Portfolio from './Portfolio/Portfolio';
+import PortfolioPage from './PortfolioPage/PortfolioPage';
 import Footer from './Footer/Footer';
 
 export {
@@ -13,5 +14,6 @@ export {
   About,
   Main,
   Portfolio,
+  PortfolioPage,
   Footer,
 }
