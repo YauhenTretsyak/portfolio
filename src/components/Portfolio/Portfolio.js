@@ -1,5 +1,6 @@
 import PortfolioItem from './PortfolioItem/PortfolioItem';
 import { Carousel } from 'react-responsive-carousel';
+import { v4 as uuidv4 } from 'uuid';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { portfolioData } from '../../Data/portfolioData';
 
@@ -144,7 +145,7 @@ const Portfolio = () => {
   const portfolioSlides = portfolioData.slides.map(item => {
     return(
       <PortfolioItem
-        key={ item.id }
+        key={ uuidv4() }
         bgImage={ item.bgImage }
         content={ item.content }
         link={ item.link }

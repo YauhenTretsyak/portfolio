@@ -10,7 +10,10 @@ import {
 
 const SkillsColumnIcon = ({ ...props }) => {
   return(
-    <SkillIconWrapper>
+    <SkillIconWrapper 
+      color={ props.color }
+      colorHover={ props.colorHover }
+    >
       <SkillIcon>
         { props.icon }
       </SkillIcon>
@@ -19,7 +22,7 @@ const SkillsColumnIcon = ({ ...props }) => {
           { props.title }
         </SkillLevelHeader>
         <SkillLevelWrapper levelValue={ props.levelValue }>
-          <SkillLevelValue levelValue={ props.levelValue }/>
+          <SkillLevelValue className="skill_level_value" levelValue={ props.levelValue }/>
         </SkillLevelWrapper>
       </SkillLevel>
     </SkillIconWrapper>

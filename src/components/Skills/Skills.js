@@ -1,6 +1,7 @@
 import SkillsColumnIcon from './SkillsColumnIcon/SkillsColumnIcon.js';
 import { Socials } from '../Blocks/index';
 import { skillsData } from '../../Data/skillsData';
+import { v4 as uuidv4 } from 'uuid';
 import authorImg from '../../Assets/author-img.png';
 
 import {
@@ -16,18 +17,20 @@ import {
 } from './Skills.styles.js';
 
 
-const columnRender = skillsData.columns.map( (arr, index) => {
+const columnRender = skillsData.columns.map( (arr) => {
   const testItem = arr.skillsColumn;
   return (
-    <SkillIconColumn key={ index + 'iuy56gbvBbv' }>
+    <SkillIconColumn key={ uuidv4() }>
       {
         testItem.map(item => {
           return(
             <SkillsColumnIcon 
-              key={ item.id }
+              key={ uuidv4() }
               icon={ item.icon }
               title={ item.title }
               levelValue={ item.levelValue }
+              color={ item.color }
+              colorHover={ item.colorHover }
             />
           )
         })

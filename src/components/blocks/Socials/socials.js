@@ -1,11 +1,11 @@
 import { socialsData } from '../../../Data/socialsData';
+import { v4 as uuidv4 } from 'uuid';
 import { SocialsWrapper, SocialLink } from './Socials.styles.js';
 
 const socialLinkItem = socialsData.socialIcon.map(item => {
-  console.log(item.icon_before)
   return(
     <SocialLink 
-      key={ item.id }
+      key={ uuidv4() }
       href={ item.link }
       icon_before={ item.icon_before }  
     >

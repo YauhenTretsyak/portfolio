@@ -2,6 +2,8 @@ import {HashRouter as Router} from 'react-router-dom';
 import {
   HeaderSection,
   HeaderWrapper,
+  LangSwitchWrapper,
+  LangSwitch,
   LogoWpapper,
   LogoMain,
   LogoSecondary,
@@ -14,6 +16,14 @@ const Header = ({ linkTitle, linkTo }) => {
     <Router>
       <HeaderSection>
         <HeaderWrapper>
+          <LangSwitchWrapper>
+            <LangSwitch>
+              PL
+            </LangSwitch>
+            <LangSwitch>
+              EN
+            </LangSwitch>
+          </LangSwitchWrapper>
           <LogoWpapper>
             <LogoMain>
               Eugeniusz Trecjak

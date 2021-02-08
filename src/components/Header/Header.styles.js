@@ -1,18 +1,50 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ContainerWrapper } from '../../style/StyledComponents/ContainerWrapper';
+// import { ContainerWrapper } from '../../style/StyledComponents/ContainerWrapper';
+import { FlexWrapper, ContainerWrapper } from '../../style/StyledComponents';
 
 const HeaderSection = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
 `
+
 const HeaderWrapper = styled(ContainerWrapper)`
+  position: relative; 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+`
+
+const LangSwitchWrapper = styled(FlexWrapper)`
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 47px;
+  transform: translateY(-50%);
+`
+
+const LangSwitch = styled.p`
+  cursor: pointer;
+  font-weight: ${({theme}) => theme.fontWeight.font_weightSemiBold};
+  font-size: 14px;
+  color: ${({theme}) => theme.colors.color_grayDark};
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: ${({theme}) => theme.colors.color_blue};
+    text-shadow: 3px 6px 2px #00000059;
+    font-size: 15px;
+  }
 `
 
 const LogoWpapper = styled.div`
@@ -60,6 +92,8 @@ const MenuLink = styled(Link)`
 export {
   HeaderSection,
   HeaderWrapper,
+  LangSwitchWrapper,
+  LangSwitch,
   LogoWpapper,
   LogoMain,
   LogoSecondary,

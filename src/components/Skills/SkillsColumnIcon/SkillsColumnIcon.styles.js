@@ -4,6 +4,28 @@ const SkillIconWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  cursor: default;
+  color: ${props => props.color};
+  transition: all 0.3s ease-in-out;
+
+  @media only screen and (min-width: 991px) {
+    padding: 2px;
+    border: 1px solid #ffffff00;
+    border-radius: 7px;
+  }
+
+  &:hover {
+    color: ${props => props.colorHover};
+    
+    @media only screen and (min-width: 991px) {
+      border: 1px solid ${props => props.color};
+      box-shadow: 0px 6px 9px 0px ${props => props.color};
+    }
+
+    & .skill_level_value {
+      background-color: #c7ff4f;
+    }
+  }
 `
 const SkillIcon = styled.div`
   width: 23px;
@@ -49,7 +71,7 @@ const SkillLevelWrapper = styled.div`
   display: ${props => !props.levelValue ? 'none' :  ''};
   width: 44px;
   height: 5px;
-  border: ${props => !props.levelValue ? 'none' :  '1px solid'} ${({theme}) => theme.colorscolor_grayDark} ;
+  border: ${props => !props.levelValue ? 'none' :  '1px solid'} ${({theme}) => theme.colors.color_grayDark} ;
   border-radius: 3px;
 
   @media only screen and (min-width: 500px) {
@@ -77,6 +99,7 @@ const SkillLevelValue = styled.div`
   width: ${props => props.levelValue}%;
   border-radius: 3px;
   background-color: ${props => props.levelValue ? ({theme}) => theme.colors.color_yellow : 'none'};
+  transition: all 0.3s ease-in-out;
 `
 
 export {

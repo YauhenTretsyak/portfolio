@@ -13,7 +13,6 @@ const instagram = <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2
 const socialsData = {
   socialIcon : [
     {
-      id: 'try56R',
       icon: (
         <SocialIcon>
           { github }
@@ -23,7 +22,6 @@ const socialsData = {
       link: '/',
     },
     {
-      id: 'try56R987jfghFDFD',
       icon: (
         <SocialIcon>
           { linkedin }
@@ -33,7 +31,6 @@ const socialsData = {
       link: '/',
     },
     {
-      id: 'try56Rkjhj5609',
       icon: (
         <SocialIcon>
           { facebook }
@@ -43,7 +40,6 @@ const socialsData = {
       link: '/',
     },
     {
-      id: 'try56RjhHJdf45',
       icon: (
         <SocialIcon>
           { instagram }
