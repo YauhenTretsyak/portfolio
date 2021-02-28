@@ -6,6 +6,7 @@ const colors = {
     color_grayDark: '#506473',
     color_gray: '#6C869A',
     color_yellow: '#FFDA50', 
+    color_green: '#3efd13',
   }
 
 const fontWeight = {

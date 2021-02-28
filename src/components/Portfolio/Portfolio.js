@@ -140,7 +140,9 @@ const indicatorStyles = {
   cursor: 'pointer',
 };
 
-const Portfolio = () => {
+const Portfolio = ({ ...props }) => {
+
+  const titleSection = props.langSwitch === 'PL' ? portfolioData.mainTitle.PL : portfolioData.mainTitle.EN;
 
   const portfolioSlides = portfolioData.slides.map(item => {
     return(
@@ -157,7 +159,7 @@ const Portfolio = () => {
     <PortfolioSection>
       <PortfolioWrapper>
         <Header>
-          Niektóre moje pracy
+          { titleSection }
         </Header>
         <CarouselWrapper>
           <Carousel

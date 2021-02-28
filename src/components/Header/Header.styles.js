@@ -31,20 +31,48 @@ const LangSwitchWrapper = styled(FlexWrapper)`
   width: 35px;
   height: 47px;
   transform: translateY(-50%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: ${props => props.langSwitch === 'PL' ? '5px' : '8px'};
+    left: 2px;
+    width: 2px;
+    height: 100%;
+    background-color: ${({theme}) => theme.colors.color_grayDark};
+    filter: blur(2px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: ${props => props.langSwitch === 'PL' ? '-2px' : '1px'};
+    left: -3px;
+    width: 2px;
+    height: 100%;
+    border-radius: 20px;
+    background-image: ${ props => props.langSwitch === 'PL' ?
+      'linear-gradient( #0028FF 40%,#506473 56%);' :
+      'linear-gradient(#506473 47%, #0028FF 59%);'
+    };
+    transition: all 0.2s ease-in-out;
+  }
 `
 
 const LangSwitch = styled.p`
   cursor: pointer;
-  font-weight: ${({theme}) => theme.fontWeight.font_weightSemiBold};
-  font-size: 14px;
-  color: ${({theme}) => theme.colors.color_grayDark};
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: ${({theme}) => theme.colors.color_blue};
-    text-shadow: 3px 6px 2px #00000059;
-    font-size: 15px;
-  }
+  font-weight: ${props => props.langSw ?
+    ({theme}) => theme.fontWeight.font_weightBold :
+    ({theme}) => theme.fontWeight.font_weightSemiBold
+  };
+  font-size: ${props => props.langSw ? '16px' : '14px'};
+  color: ${props => props.langSw ? 
+    ({theme}) => theme.colors.color_blue : 
+    ({theme}) => theme.colors.color_grayDark
+  };
+  text-shadow: ${props => props.langSw ? '5px 8px 2px #00000059' : 'none'};
+  transition: all 0.1s ease-in-out;
 `
 
 const LogoWpapper = styled.div`
@@ -56,6 +84,7 @@ const LogoWpapper = styled.div`
 
 const LogoMain = styled.p`
   font-size: 36px;
+  text-shadow: 6px 6px 2px #d8d8d8;
 `
 const LogoSecondary = styled.p`
   width: 100%;

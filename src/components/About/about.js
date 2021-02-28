@@ -1,4 +1,7 @@
+import { useContext } from 'react';
+import { LangContext } from '../../Context/LangContext';
 import { aboutData } from '../../Data/aboutData';
+import { v4 as uuidv4 } from 'uuid';
 
 import {
   AboutSection,
@@ -13,7 +16,7 @@ import {
 const clipItems = aboutData.clip_secondary.map(item => {
   return(
     <ClipItem
-      key={item.id}
+      key={ uuidv4() }
       background={item.bg}
       clipPath={item.clip_path}
       className='clip'
@@ -21,21 +24,28 @@ const clipItems = aboutData.clip_secondary.map(item => {
   )
 })
 
-const content = aboutData.content.map(item => {
-  return(
-    <AboutContent key={ item.id }>
-      { item.text }
-    </AboutContent>
-  )
-})
+
 
 const About = () => {
+  const { langSwitch } = useContext(LangContext);
+  const sectionTitle = langSwitch === 'PL' ? aboutData.sectionTitle.PL : aboutData.sectionTitle.EN;
+
+  const contentLang = langSwitch === 'PL' ? aboutData.content.PL : aboutData.content.EN;
+
+  const content = contentLang.map(item => {
+    return(
+      <AboutContent key={ uuidv4() }>
+        { item.text }
+      </AboutContent>
+    )
+  })
+
   return(
     <AboutSection>
       <AboutWrapper>
         <AboutContentWrapper>
           <AboutHeader>
-            O mnie
+            { sectionTitle }
           </AboutHeader>
           { content }
         </AboutContentWrapper>

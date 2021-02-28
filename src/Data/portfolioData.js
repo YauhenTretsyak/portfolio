@@ -9,6 +9,10 @@ import ddr from '../Assets/sites/ddr.jpg';
 import web_start from '../Assets/sites/webstart_diploma.jpg';
 
 const portfolioData = {
+  mainTitle: {
+    PL: 'Niektóre z moich prac',
+    EN: 'Some of my works',
+  },
   slides: [
     {
       link: '/',
@@ -32,7 +36,7 @@ const portfolioData = {
     },
     {
       link: '/',
-      content: 'Sass/Scss / React ',
+      content: 'Sass/Scss / React / REST API',
       bgImage: got,
     },
     {

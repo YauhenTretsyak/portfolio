@@ -57,6 +57,7 @@ const AuthorImgWrapper = styled(ImgWrapper)`
 `
 
 const SkillBoxWrapper = styled.div`
+  position: relative;
   width: 100%;
   max-width: 300px;
   padding: 20px 15px;
@@ -72,6 +73,18 @@ const SkillBoxWrapper = styled.div`
     max-width: 736px;
     padding: 36px 56px;
   }
+
+  &::before {
+    content: 'Moje umiejętnośći';
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    color: ${({theme}) => theme.colors.color_grayDark};
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #9e9e9e;
+  }
 `
 
 const SkillIconColumn = styled.div``
@@ -83,11 +96,6 @@ const SkillBox = styled.div`
 `
 const SkillsContent = styled.p`
   font-size: 16px;
-
-  & > span {
-    font-weight: ${({theme}) => theme.fontWeight.font_weightBold};
-    color: ${({theme}) => theme.colors.color_black};
-  }
 
   @media only screen and (min-width: 576px) {
     font-size: 18px;

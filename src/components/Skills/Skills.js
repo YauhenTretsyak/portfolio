@@ -1,6 +1,8 @@
+import { useContext } from 'react';
 import SkillsColumnIcon from './SkillsColumnIcon/SkillsColumnIcon.js';
 import { Socials } from '../Blocks/index';
 import { skillsData } from '../../Data/skillsData';
+import { LangContext } from '../../Context/LangContext';
 import { v4 as uuidv4 } from 'uuid';
 import authorImg from '../../Assets/author-img.png';
 
@@ -40,6 +42,9 @@ const columnRender = skillsData.columns.map( (arr) => {
 })
 
 const Skills = () => {
+  const { langSwitch } = useContext(LangContext);
+  const skillsInfo = langSwitch === 'PL' ? skillsData.skillsInfo.PL : skillsData.skillsInfo.EN;
+
   return(
     <SkillsSection>
       <SkillsWrapper>
@@ -47,19 +52,19 @@ const Skills = () => {
           <SkillsHeader>
             Frontend Developer
           </SkillsHeader>
-          <AuthorImgWrapper className='author_img'>
-            <img className='author' src={ authorImg } alt='author'></img>
+          <AuthorImgWrapper>
+            <img  src={ authorImg } alt='author'></img>
           </AuthorImgWrapper>
           <Socials />
         </SkillsAuthor>
-        <SkillBoxWrapper className='skills_box-wrapper'>
-          <SkillBox className='skill_box'>
+        <SkillBoxWrapper>
+          <SkillBox>
 
             { columnRender }
           
           </SkillBox>
           <SkillsContent>
-            Oraz używam takie narzędzia, jak <span>Webpack</span>, <span>Gulp</span>. Posiadam dobre doświdczenie w tematyce <span>Responsive Web Design</span> (<span>Mobile first</span> i <span>Desktop first</span>), <span>CrossBrowser</span>. Mam doświadczenie pracy z <span>jQuery</span>, <span>HubSpot</span>.
+            { skillsInfo }
           </SkillsContent>
         </SkillBoxWrapper>
       </SkillsWrapper>
