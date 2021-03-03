@@ -8,6 +8,8 @@ const ItemWrapper = styled.div`
 
   @media only screen and (min-width: 1104px) {
     margin: 10px 0;
+    width: 266px;
+    height: 295px;
   }
 
   @media only screen and (min-width: 1304px) {
@@ -29,6 +31,7 @@ const Item = styled.a`
   border-radius: 8px;
   transform: translate(-50%, -50%);
   box-shadow: inset 0px 4px 20px 2px #00000059;
+  transition: all 0.2s ease-in-out;
 
   @media only screen and (min-width: 1104px) {
     width: 100%;
@@ -66,7 +69,7 @@ const ItemImage = styled.div`
   background-position: center;
   background-size: cover;
   filter: brightness(0.9);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   @media only screen and (min-width: 991px) {
     filter: brightness(0.6);
@@ -78,17 +81,24 @@ const ItemImage = styled.div`
   }
 `
 const ItemContent = styled.p`
-  font-size: 14px;
+  padding: 0 13px;
   max-width: 200px;
+  font-size: 14px;
+  text-align: center;
   font-weight: ${({theme}) => theme.fontWeight.font_weightSemiBold};
   color: ${({theme}) => theme.colors.color_black};
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
+
+  @media only screen and (min-width: 1304px) {
+    max-width: 225px;
+    padding: 0;
+  }
 `
 
 const PortfolioItem = ({ ...props }) => {
   return(
     <ItemWrapper>
-      <Item href={ props.link }>
+      <Item href={ props.link } target='_blank'>
         <ItemImage bgImage={ props.bgImage } ></ItemImage>
         <ItemContent>
           { props.content }
