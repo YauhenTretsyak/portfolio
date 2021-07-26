@@ -25,8 +25,8 @@ const PortfolioWrapper = styled(ContainerWrapper)`
   } 
 `
 
-const Header = styled.h3`
+const Title = styled.h3`
   margin-bottom: 10px;
 `
 
-export { PortfolioSection, PortfolioWrapper, Header }
+export { PortfolioSection, PortfolioWrapper, Title }

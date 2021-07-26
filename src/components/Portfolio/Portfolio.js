@@ -1,18 +1,35 @@
-import Slider from './Slider/Slider';
+import { Slider } from '../Blocks/index';
 import { portfolioData } from '../../Data/portfolioData';
-import { PortfolioSection, PortfolioWrapper, Header } from './Portfolio.styles.js';
+import { PortfolioSection, PortfolioWrapper, Title } from './Portfolio.styles.js';
+import PortfolioItem from './PortfolioItem/PortfolioItem';
+import { v4 as uuidv4 } from 'uuid';
+import {  SwiperSlide } from 'swiper/react';
 
 const Portfolio = ({ ...props }) => {
   
   const titleSection = props.langSwitch === 'PL' ? portfolioData.mainTitle.PL : portfolioData.mainTitle.EN;
+  const slideItems = portfolioData.slides.map(item => {
+    return(
+      <SwiperSlide key={ uuidv4() }>
+        <PortfolioItem
+          bgImage={ item.bgImage }
+          content={ item.content }
+          link={ item.link }
+        />
+      </SwiperSlide>
+    )
+  })
 
   return(
     <PortfolioSection>
       <PortfolioWrapper>
-        <Header>
+        <Title>
           { titleSection }
-        </Header>
-        <Slider />
+        </Title>
+        <Slider 
+          sliderSettings={ portfolioData.sliderSettings }
+          slides={ slideItems }
+        />
       </PortfolioWrapper>
     </PortfolioSection>
   )

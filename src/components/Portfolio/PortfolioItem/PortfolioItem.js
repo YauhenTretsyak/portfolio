@@ -95,13 +95,16 @@ const ItemContent = styled.p`
   }
 `
 
-const PortfolioItem = ({ ...props }) => {
+const PortfolioItem = props => {
+
+  const { link, bgImage, content } = props;
+
   return(
     <ItemWrapper>
-      <Item href={ props.link } target='_blank'>
-        <ItemImage bgImage={ props.bgImage } ></ItemImage>
+      <Item href={ link } target='_blank'>
+        <ItemImage bgImage={ bgImage } ></ItemImage>
         <ItemContent>
-          { props.content }
+          { content }
         </ItemContent>
       </Item>
     </ItemWrapper>
