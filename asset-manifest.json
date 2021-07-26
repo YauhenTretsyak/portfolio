@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.fbe8a6b4.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fbe8a6b4.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.2028612f.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2028612f.js.map",
+    "static/css/2.32f24386.chunk.css": "/portfolio/static/css/2.32f24386.chunk.css",
+    "static/js/2.1b84df9d.chunk.js": "/portfolio/static/js/2.1b84df9d.chunk.js",
+    "static/js/2.1b84df9d.chunk.js.map": "/portfolio/static/js/2.1b84df9d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.32f24386.chunk.css.map": "/portfolio/static/css/2.32f24386.chunk.css.map",
+    "static/js/2.1b84df9d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1b84df9d.chunk.js.LICENSE.txt",
+    "static/media/author-img.f9e21ae2.png": "/portfolio/static/media/author-img.f9e21ae2.png",
+    "static/media/beer_loga_pub.885c7926.jpg": "/portfolio/static/media/beer_loga_pub.885c7926.jpg",
+    "static/media/beerstation_pub.794c1be6.jpg": "/portfolio/static/media/beerstation_pub.794c1be6.jpg",
+    "static/media/calc.ea43f573.png": "/portfolio/static/media/calc.ea43f573.png",
+    "static/media/clip.9f239450.jpeg": "/portfolio/static/media/clip.9f239450.jpeg",
+    "static/media/clip_1.8a38e300.jpeg": "/portfolio/static/media/clip_1.8a38e300.jpeg",
+    "static/media/clip_2.62d23ebe.jpeg": "/portfolio/static/media/clip_2.62d23ebe.jpeg",
+    "static/media/clip_3.61715693.jpeg": "/portfolio/static/media/clip_3.61715693.jpeg",
+    "static/media/ddr.705afaba.jpg": "/portfolio/static/media/ddr.705afaba.jpg",
+    "static/media/facebook.65533af9.svg": "/portfolio/static/media/facebook.65533af9.svg",
+    "static/media/github.8af275a9.svg": "/portfolio/static/media/github.8af275a9.svg",
+    "static/media/got.1902b8ca.jpg": "/portfolio/static/media/got.1902b8ca.jpg",
+    "static/media/html_css.d2438b53.jpg": "/portfolio/static/media/html_css.d2438b53.jpg",
+    "static/media/instagram.78f29687.svg": "/portfolio/static/media/instagram.78f29687.svg",
+    "static/media/jablonski.5520b326.jpg": "/portfolio/static/media/jablonski.5520b326.jpg",
+    "static/media/js_kurs.1006f8f3.jpg": "/portfolio/static/media/js_kurs.1006f8f3.jpg",
+    "static/media/linkedIn.e4235dff.svg": "/portfolio/static/media/linkedIn.e4235dff.svg",
+    "static/media/new_site.b486afc6.jpg": "/portfolio/static/media/new_site.b486afc6.jpg",
+    "static/media/responsive.1eefdd9f.jpg": "/portfolio/static/media/responsive.1eefdd9f.jpg",
+    "static/media/tretsyak_old_page.4d447020.jpg": "/portfolio/static/media/tretsyak_old_page.4d447020.jpg",
+    "static/media/twitter_app.081b58be.jpg": "/portfolio/static/media/twitter_app.081b58be.jpg",
+    "static/media/web_start_3.0.48300a67.png": "/portfolio/static/media/web_start_3.0.48300a67.png",
+    "static/media/webstart_diploma.93666e27.jpg": "/portfolio/static/media/webstart_diploma.93666e27.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2028612f.js",
+    "static/css/2.32f24386.chunk.css",
+    "static/js/2.1b84df9d.chunk.js",
+    "static/js/main.fbe8a6b4.chunk.js"
+  ]
+}
