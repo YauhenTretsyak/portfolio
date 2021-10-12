@@ -9,8 +9,6 @@ const ContainerWrapper = styled.div`
   min-height: .1rem;
   box-sizing: border-box;
   padding: 20px 40px;
-  // padding-right: 36px;
-  // padding-left: 36px;
   background: linear-gradient(${({theme}) => theme.colors.color_white} 24%, #d1e8ea6b 100%);
   box-shadow: inset 0px 3px 10px 1px #00000059;
 

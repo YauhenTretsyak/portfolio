@@ -6,8 +6,8 @@ import img_5 from '../Assets/certificates/web_start_3.0.png';
 
 const certificatesData = {
   mainTitle: {
-    PL : 'Setryfikaty',
-    EN : 'Certificates',
+    PL : 'Niektóre Setryfikaty',
+    EN : 'Some Certificates',
   },
   sliderSettings: {
     id: 'certificates',

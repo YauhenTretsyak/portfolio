@@ -20,7 +20,9 @@ const CertificatesWrapper = styled(ContainerWrapper)`
   border-radius: 8px;
 `
 
-const Title = styled.h3``
+const Title = styled.h3`
+  color: ${({theme}) => theme.colors.color_grayDark};
+`
 
 const slides = certificatesData.slides.map(item => {
   return(
