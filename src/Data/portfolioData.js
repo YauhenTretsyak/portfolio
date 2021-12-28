@@ -1,4 +1,5 @@
 import new_page from '../Assets/sites/new_site.jpg';
+import new_beer_station from '../Assets/sites/BS_logo.jpg'; 
 import beer_station from '../Assets/sites/beerstation_pub.jpg'; 
 import old_page from '../Assets/sites/tretsyak_old_page.jpg';
 import beer_loga from '../Assets/sites/beer_loga_pub.jpg';
@@ -39,14 +40,19 @@ const portfolioData = {
   },
   slides: [
     {
-      link: '/',
-      content: 'React / StyledComponents / ContextAPI ',
-      bgImage: new_page,
+      link: 'https://yauhentretsyak.github.io/beer_station_new/',
+      content: 'React / StyledComponents / ContextAPI / future: (JsonServer / NodeJS)',
+      bgImage: new_beer_station,
+    },
+    {
+      link: 'http://www.beerstation.pl',
+      content: 'HTML / JS / Sass | admin panel : React / php',
+      bgImage: beer_station,
     },
     {
       link: '/',
-      content: 'HTML / JS / Sass | admin panel : React / php',
-      bgImage: beer_station,
+      content: 'React / StyledComponents / ContextAPI ',
+      bgImage: new_page,
     },
     {
       link: '/',
