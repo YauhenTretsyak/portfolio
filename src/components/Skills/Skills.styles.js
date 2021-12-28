@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { skillsData } from '../../Data/skillsData';
 import { ContainerWrapper, ImgWrapper } from '../../style/StyledComponents/index';
 
 const SkillsSection = styled.section`
@@ -75,15 +76,25 @@ const SkillBoxWrapper = styled.div`
   }
 
   &::before {
-    content: 'Moje umiejętnośći';
+    content: '${ props =>  props.skillsLang}';
     position: absolute;
-    top: 7px;
-    left: 9px;
+    top: 11px;
+    left: 14px;
     color: ${({theme}) => theme.colors.color_grayDark};
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     text-shadow: 3px 3px 3px #9e9e9e;
+
+    @media only screen and (min-width: 576px) {
+      top: 19px;
+      left: 20px;
+    } 
+
+    @media only screen and (min-width: 768px) {
+      top: 22px;
+      left: 29px;
+    }
   }
 `
 
@@ -93,6 +104,15 @@ const SkillBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+
+  @media only screen and (min-width: 576px) {
+    margin-top: 30px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 22px;
+  }
 `
 const SkillsContent = styled.p`
   font-size: 16px;

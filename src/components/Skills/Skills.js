@@ -44,6 +44,7 @@ const columnRender = skillsData.columns.map( (arr) => {
 const Skills = () => {
   const { langSwitch } = useContext(LangContext);
   const skillsInfo = langSwitch === 'PL' ? skillsData.skillsInfo.PL : skillsData.skillsInfo.EN;
+  const skillsLang = langSwitch === 'PL' ? 'Moje umiejętnośći' : 'My Skills';
 
   return(
     <SkillsSection>
@@ -57,7 +58,9 @@ const Skills = () => {
           </AuthorImgWrapper>
           <Socials />
         </SkillsAuthor>
-        <SkillBoxWrapper>
+        <SkillBoxWrapper
+          skillsLang={ skillsLang }
+        >
           <SkillBox>
 
             { columnRender }

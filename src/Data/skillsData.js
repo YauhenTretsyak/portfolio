@@ -24,7 +24,7 @@ const skillsData = {
     ),
     EN: (
       <BoldComponent>
-        <strong>English version</strong> Oraz używam takie narzędzia, jak <strong>Webpack</strong>, <strong>Gulp</strong>. Posiadam dobre doświdczenie w tematyce <strong>Responsive Web Design</strong> (<strong>Mobile first</strong> i <strong>Desktop first</strong>), <strong>CrossBrowser</strong>. Mam doświadczenie pracy z <strong>jQuery</strong>, <strong>HubSpot</strong>.
+        <strong>English version</strong> test text --- <strong>Webpack</strong>, <strong>Gulp</strong>. Posiadam dobre doświdczenie w tematyce <strong>Responsive Web Design</strong> (<strong>Mobile first</strong> i <strong>Desktop first</strong>), <strong>CrossBrowser</strong>. Mam doświadczenie pracy z <strong>jQuery</strong>, <strong>HubSpot</strong>.
       </BoldComponent>
     )
   },

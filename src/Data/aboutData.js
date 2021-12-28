@@ -30,7 +30,7 @@ const aboutData = {
       {
         text: (
           <BoldComponent>
-            <strong>English version</strong> Jestem zaangażowany w rozwój osobisty, zawsze jestem otwarty na nowe wyzwania. Łatwo się przystosowuję do pracy w nowym zespole. Lubię pracować w grupie.
+            <strong>English version</strong> Test text ---- Jestem zaangażowany w rozwój osobisty, zawsze jestem otwarty na nowe wyzwania. Łatwo się przystosowuję do pracy w nowym zespole. Lubię pracować w grupie.
           </BoldComponent>
         )
       },
