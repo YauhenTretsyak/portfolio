@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.f8a3ce7b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f8a3ce7b.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1826ec2d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1826ec2d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2028612f.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2028612f.js.map",
     "static/css/2.c901edb5.chunk.css": "/portfolio/static/css/2.c901edb5.chunk.css",
@@ -11,7 +11,7 @@
     "static/css/2.c901edb5.chunk.css.map": "/portfolio/static/css/2.c901edb5.chunk.css.map",
     "static/js/2.1b84df9d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1b84df9d.chunk.js.LICENSE.txt",
     "static/media/BS_logo.d78860a9.jpg": "/portfolio/static/media/BS_logo.d78860a9.jpg",
-    "static/media/author-img.f9e21ae2.png": "/portfolio/static/media/author-img.f9e21ae2.png",
+    "static/media/author-img.d3270172.jpg": "/portfolio/static/media/author-img.d3270172.jpg",
     "static/media/beer_loga_pub.885c7926.jpg": "/portfolio/static/media/beer_loga_pub.885c7926.jpg",
     "static/media/beerstation_pub.794c1be6.jpg": "/portfolio/static/media/beerstation_pub.794c1be6.jpg",
     "static/media/calc.ea43f573.png": "/portfolio/static/media/calc.ea43f573.png",
@@ -39,6 +39,6 @@
     "static/js/runtime-main.2028612f.js",
     "static/css/2.c901edb5.chunk.css",
     "static/js/2.1b84df9d.chunk.js",
-    "static/js/main.f8a3ce7b.chunk.js"
+    "static/js/main.1826ec2d.chunk.js"
   ]
 }
