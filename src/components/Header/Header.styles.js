@@ -77,9 +77,13 @@ const LangSwitch = styled.p`
 
 const LogoWpapper = styled.div`
   width: 100%;
-  max-width: 440px;
+  max-width: 289px;
   font-weight: ${({theme}) => theme.fontWeight.font_weightSemiBold};
   text-align: center;
+
+  @media only screen and (min-width: 468px) {
+    max-width: 440px;
+  }
 `
 
 const LogoMain = styled.p`

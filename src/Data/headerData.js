@@ -17,13 +17,13 @@ const headerData = {
   },
   mainPage: {
     PL: {
-      mainLink: '/portfolio',
-      mainLinkTitle: 'Portfolio',
+      mainLink: '/certificates',
+      mainLinkTitle: 'Certificates',
       contactTitle: 'Kontakt'
     },
     EN: {
-      mainLink: '/portfolio',
-      mainLinkTitle: 'Portfolio',
+      mainLink: '/certificates',
+      mainLinkTitle: 'Certificates',
       contactTitle: 'Contact'
     }
   }

@@ -4,7 +4,7 @@ import { Socials } from '../Blocks/index';
 import { skillsData } from '../../Data/skillsData';
 import { LangContext } from '../../Context/LangContext';
 import { v4 as uuidv4 } from 'uuid';
-import authorImg from '../../Assets/author-img.png';
+import authorImg from '../../Assets/author-img.jpg';
 
 import {
   SkillsSection,

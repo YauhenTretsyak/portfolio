@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { LangContext } from '../../Context/LangContext.js';
-import {Header, Portfolio} from '../index'; 
+import {Header, Certificates} from '../index'; 
 import { headerData } from '../../Data/headerData.js';
 
-const PortfolioPage = () => {
+const CertificatePage = () => {
 
   const { langSwitch } = useContext(LangContext);
 
@@ -16,9 +16,9 @@ const PortfolioPage = () => {
         linkTo={ linksInfo.mainLink }
         contactTitle={ linksInfo.contactTitle }
       />
-      <Portfolio langSwitch={ langSwitch } />
+      <Certificates langSwitch={ langSwitch } />
     </>
   )
 }
 
-export default PortfolioPage;
+export default CertificatePage;

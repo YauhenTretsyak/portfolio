@@ -55,6 +55,11 @@ const AuthorImgWrapper = styled(ImgWrapper)`
   margin-bottom: 40px;
   width: 215px;
   height: 265px;
+
+  @media only screen and (min-width: 1104px) {
+    width: auto;
+    height: 311px;
+  }
 `
 
 const SkillBoxWrapper = styled.div`

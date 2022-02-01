@@ -2,7 +2,9 @@ import { ThemeProvider } from 'styled-components';
 import LangContextProvider, { LangContext } from '../../Context/LangContext.js';
 import GlobalStyle from '../../style/GlobalStyle';
 import { theme } from '../../style/theme';
-import { Main, PortfolioPage, Footer } from '../index';
+import { Main, CertificatePage, Footer } from '../index';
+import { HelmetBlock } from '../Blocks/index'
+import favicon from '../../Assets/favicon.ico';
 import {
   HashRouter as Router,
   Switch,
@@ -15,9 +17,16 @@ const App = () => {
       <ThemeProvider theme={ theme }>
         <LangContextProvider>
           <GlobalStyle />
+          {/* <HelmetBlock
+            title={ 'Yauhen Tretsyak' }
+            name={ 'Yauhen Tretsyak' }
+            content={ 'portfolio' }
+            description='portfolio'
+            faviconUrl={ favicon }
+          /> */}
           <Switch>
-            <Route path='/portfolio'>
-              <PortfolioPage />
+            <Route path='/certificates'>
+              <CertificatePage />
             </Route>
             <Route path='/'>
               <Main />

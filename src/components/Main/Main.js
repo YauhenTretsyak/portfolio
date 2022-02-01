@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { LangContext } from '../../Context/LangContext.js';
 import { headerData } from '../../Data/headerData.js';
-import {About, Skills, Certificates, Header} from '../index'; 
+import {About, Skills, Portfolio, Header} from '../index'; 
 
 const Main = () => {
 
@@ -18,7 +18,7 @@ const Main = () => {
       />
       <Skills />
       <About />
-      <Certificates />
+      <Portfolio />
     </>
   )
 }
