@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { skillsData } from '../../Data/skillsData';
 import { ContainerWrapper, ImgWrapper } from '../../style/StyledComponents/index';
 
 const SkillsSection = styled.section`
@@ -59,6 +58,11 @@ const AuthorImgWrapper = styled(ImgWrapper)`
   @media only screen and (min-width: 1104px) {
     width: auto;
     height: 311px;
+  }
+
+  & > img {
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 1px #00000059;
   }
 `
 
