@@ -18,7 +18,7 @@ const headerData = {
   mainPage: {
     PL: {
       mainLink: '/certificates',
-      mainLinkTitle: 'Certificates',
+      mainLinkTitle: 'Certyficaty',
       contactTitle: 'Kontakt'
     },
     EN: {

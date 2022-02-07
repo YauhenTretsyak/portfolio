@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { LangContext } from '../../Context/LangContext.js';
 import { Slider } from '../Blocks/index';
 import { portfolioData } from '../../Data/portfolioData';
 import { PortfolioSection, PortfolioWrapper, Title } from './Portfolio.styles.js';
@@ -5,9 +7,11 @@ import PortfolioItem from './PortfolioItem/PortfolioItem';
 import { v4 as uuidv4 } from 'uuid';
 import {  SwiperSlide } from 'swiper/react';
 
-const Portfolio = ({ ...props }) => {
+const Portfolio = () => {
   
-  const titleSection = props.langSwitch === 'PL' ? portfolioData.mainTitle.PL : portfolioData.mainTitle.EN;
+  const { langSwitch } = useContext(LangContext)
+
+  const titleSection = langSwitch === 'PL' ? portfolioData.mainTitle.PL : portfolioData.mainTitle.EN;
   const slideItems = portfolioData.slides.map(item => {
     return(
       <SwiperSlide key={ uuidv4() }>

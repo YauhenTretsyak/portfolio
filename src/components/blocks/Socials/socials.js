@@ -8,6 +8,7 @@ const socialLinkItem = socialsData.socialIcon.map(item => {
       key={ uuidv4() }
       href={ item.link }
       icon_before={ item.icon_before }  
+      target='_blank'
     >
       { item.icon }
     </SocialLink>
