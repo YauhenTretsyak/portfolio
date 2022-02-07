@@ -1,6 +1,7 @@
 import {HashRouter as Router} from 'react-router-dom';
 import { useState, useContext } from 'react';
 import { LangContext } from '../../Context/LangContext.js';
+import { Contact } from '../../Components/Blocks/';
 import { headerData } from '../../Data/headerData.js';
 import {
   HeaderSection,
@@ -19,6 +20,7 @@ const Header = ({ ...props }) => {
   const {langSwitch, languageSwitcher} = useContext(LangContext)
 
   const [lang, setLang] = useState(langSwitch);
+  const [IsDisplay, setIsDisplay] = useState(false);
 
   const SwicthLanguage = (e) => {
     if(e.target.innerHTML === 'PL') {
@@ -30,8 +32,13 @@ const Header = ({ ...props }) => {
     }
   }
 
+  const DisplayContactInfo = () => {
+    setIsDisplay(!IsDisplay);
+  }
+
   const mainName = langSwitch === 'PL' ? headerData.authorName.mainName : headerData.authorName.subName;
   const subName = langSwitch === 'EN' ? headerData.authorName.mainName : headerData.authorName.subName; 
+  const contactInfo = langSwitch === 'PL' ? 'W razie pytań, proszę napisać na stronie LinkedIn :)' : 'If you have any questions, please write on the LinkedIn page :)';
 
   return (
     <Router>
@@ -61,7 +68,17 @@ const Header = ({ ...props }) => {
           </LogoWpapper>
           <Menu>
             <MenuLink  to={ props.linkTo }>{ props.linkTitle }</MenuLink>
-            <MenuLink as='p'>{ props.contactTitle }</MenuLink>
+            <MenuLink 
+              onClick={DisplayContactInfo}
+              as='p'
+            >
+              { props.contactTitle }
+            </MenuLink>
+            <Contact 
+              IsDisplay={IsDisplay} 
+              info={contactInfo}
+              DisplayContactInfo={DisplayContactInfo}
+            />
           </Menu>
           {/* <div className="hamburger-box menu_hamburger">
             <div className="hamburger-inner"></div>
