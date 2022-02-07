@@ -50,7 +50,7 @@ const portfolioData = {
       bgImage: beer_station,
     },
     {
-      link: '/',
+      link: 'https://yauhentretsyak.github.io/portfolio/#/',
       content: 'React / StyledComponents / ContextAPI ',
       bgImage: new_page,
     },
