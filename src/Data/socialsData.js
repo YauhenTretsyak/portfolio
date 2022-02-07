@@ -19,7 +19,7 @@ const socialsData = {
         </SocialIcon>
       ),
       icon_before: github_before,
-      link: '/',
+      link: 'https://github.com/YauhenTretsyak/YauhenTretsyak/blob/main/README.md',
     },
     {
       icon: (
@@ -28,7 +28,7 @@ const socialsData = {
         </SocialIcon>
       ),
       icon_before: linkedin_before,
-      link: '/',
+      link: 'https://www.linkedin.com/in/eugeniusz-yauhen-trecjak-tretsyak-b944b113b/',
     },
     {
       icon: (
@@ -46,7 +46,7 @@ const socialsData = {
         </SocialIcon>
       ),
       icon_before: instagram_before,
-      link: '/',
+      link: 'https://www.instagram.com/eugeniusz_c100/',
     },
   ]
 }

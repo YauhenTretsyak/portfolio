@@ -55,7 +55,7 @@ const portfolioData = {
       bgImage: new_page,
     },
     {
-      link: '/',
+      link: 'https://zhendosc100.github.io/PF/',
       content: 'HTML / JS / Sass / Webpack',
       bgImage: old_page,
     },

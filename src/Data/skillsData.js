@@ -19,12 +19,12 @@ const skillsData = {
   skillsInfo : {
     PL: (
       <BoldComponent>
-        Oraz używam takie narzędzia, jak <strong>Webpack</strong>, <strong>Gulp</strong>. Posiadam dobre doświdczenie w tematyce <strong>Responsive Web Design</strong> (<strong>Mobile first</strong> i <strong>Desktop first</strong>), <strong>CrossBrowser</strong>. Mam doświadczenie pracy z <strong>jQuery</strong>, <strong>HubSpot</strong>.
+        Oraz używam takie narzędzia, jak <strong>Webpack</strong>, <strong>Gulp</strong>. W React dla stylizacji komponentów ostatnio używam <strong>StyledComponents</strong>. Posiadam dobre doświadczenie w temacie <strong>Responsive Web Design</strong> (<strong>Mobile first</strong> i <strong>Desktop first</strong>), <strong>CrossBrowser</strong>. Mam doświadczenie pracy z <strong>jQuery</strong>, <strong>HubSpot</strong>. Więcej o moim doświadczeniu i umiejętności można znaleźć na LinkedIn.
       </BoldComponent>
     ),
     EN: (
       <BoldComponent>
-        <strong>English version</strong> test text --- <strong>Webpack</strong>, <strong>Gulp</strong>. Posiadam dobre doświdczenie w tematyce <strong>Responsive Web Design</strong> (<strong>Mobile first</strong> i <strong>Desktop first</strong>), <strong>CrossBrowser</strong>. Mam doświadczenie pracy z <strong>jQuery</strong>, <strong>HubSpot</strong>.
+        And I use tools such as <strong> webpack </strong>, <strong> Gulp </strong>. In React I recently used <strong> StyledComponents </strong> for styling. I have good experience in <strong> Responsive Web Design </strong> (<strong> Mobile First </strong> and <strong> Desktop First </strong>), <strong> CrossBrowser </strong>. Also I have experience working with <strong> jQuery </strong>, <strong> HubSpot </strong>. More about my experience and skills can be found on LinkedIn.
       </BoldComponent>
     )
   },
@@ -67,14 +67,14 @@ const skillsData = {
         {
           title: 'JavaScript',
           icon: javaScript,
-          levelValue: 55,
+          levelValue: 80,
           color: '#FFDA50',
           colorHover: '#f8c400',
         },
         {
-          title: 'React / React Native',
+          title: 'React',
           icon: react_icon,
-          levelValue: 57,
+          levelValue: 80,
           color: '#14CDF5',
           colorHover: '#00acd1',
         },
