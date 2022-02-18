@@ -1,6 +1,7 @@
 import new_page from '../Assets/sites/new_site.jpg';
 import new_beer_station from '../Assets/sites/BS_logo.jpg'; 
 import beer_station from '../Assets/sites/beerstation_pub.jpg'; 
+import weather_app from '../Assets/sites/weather__app.png';
 import old_page from '../Assets/sites/tretsyak_old_page.jpg';
 import beer_loga from '../Assets/sites/beer_loga_pub.jpg';
 import got from '../Assets/sites/got.jpg';
@@ -43,6 +44,11 @@ const portfolioData = {
       link: 'https://yauhentretsyak.github.io/beer_station_new/',
       content: 'React / StyledComponents / ContextAPI / future: (JsonServer / NodeJS)',
       bgImage: new_beer_station,
+    },
+    {
+      link: 'https://yauhentretsyak.github.io/weather_app/',
+      content: 'React / Axios / StyledComponents / ContextAPI ',
+      bgImage: weather_app,
     },
     {
       link: 'http://www.beerstation.pl',

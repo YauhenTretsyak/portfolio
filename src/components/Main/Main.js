@@ -9,6 +9,7 @@ const Main = () => {
 
   const linkInfo = langSwitch === 'PL' ? headerData.mainPage.PL : headerData.mainPage.EN;
 
+
   return(
     <>
       <Header 
