@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.a2079aab.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a2079aab.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.007fe84d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.007fe84d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2028612f.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2028612f.js.map",
     "static/css/2.c901edb5.chunk.css": "/portfolio/static/css/2.c901edb5.chunk.css",
@@ -33,6 +33,7 @@
     "static/media/responsive.1eefdd9f.jpg": "/portfolio/static/media/responsive.1eefdd9f.jpg",
     "static/media/tretsyak_old_page.4d447020.jpg": "/portfolio/static/media/tretsyak_old_page.4d447020.jpg",
     "static/media/twitter_app.081b58be.jpg": "/portfolio/static/media/twitter_app.081b58be.jpg",
+    "static/media/weather__app.1090739f.png": "/portfolio/static/media/weather__app.1090739f.png",
     "static/media/web_start_3.0.48300a67.png": "/portfolio/static/media/web_start_3.0.48300a67.png",
     "static/media/webstart_diploma.93666e27.jpg": "/portfolio/static/media/webstart_diploma.93666e27.jpg"
   },
@@ -40,6 +41,6 @@
     "static/js/runtime-main.2028612f.js",
     "static/css/2.c901edb5.chunk.css",
     "static/js/2.46c2bc8d.chunk.js",
-    "static/js/main.a2079aab.chunk.js"
+    "static/js/main.007fe84d.chunk.js"
   ]
 }
