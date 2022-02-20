@@ -46,7 +46,7 @@ const portfolioData = {
       bgImage: new_beer_station,
     },
     {
-      link: 'https://yauhentretsyak.github.io/weather_app/',
+      link: 'https://yauhentretsyak.github.io/weather_app_exchange_rate/',
       content: 'React / Axios / StyledComponents / ContextAPI ',
       bgImage: weather_app,
     },
