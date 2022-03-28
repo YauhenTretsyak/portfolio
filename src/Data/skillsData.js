@@ -72,7 +72,7 @@ const skillsData = {
           colorHover: '#f8c400',
         },
         {
-          title: 'React',
+          title: 'React/Redux toolkit',
           icon: react_icon,
           levelValue: 80,
           color: '#14CDF5',
