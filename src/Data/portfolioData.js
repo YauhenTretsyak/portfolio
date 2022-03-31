@@ -47,7 +47,7 @@ const portfolioData = {
     },
     {
       link: 'https://yauhentretsyak.github.io/weather_app_exchange_rates/',
-      content: 'React / Axios / StyledComponents / ContextAPI ',
+      content: 'React / Redux Toolkit / StyledComponents  ',
       bgImage: weather_app,
     },
     {
